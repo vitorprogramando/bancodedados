@@ -1,0 +1,261 @@
+===Banco de dados crud_db
+
+== Estrutura para tabela usuarios
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**id**//|int(11)|Não|
+|nome|varchar(11)|Não|
+|email|text|Não|
+|telefone|int(11)|Não|
+== Despejando dados para a tabela usuarios
+
+|51|vitor|teste@gmail.com|99485660
+|52|vitor|vg@gmail.com|432434
+|53|weber|vg@gmail.com|432434
+|54|caixa|vg@gmail.com|432434
+===Banco de dados phpmyadmin
+
+== Estrutura para tabela pma__bookmark
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**id**//|int(10)|Não|
+|dbase|varchar(255)|Não|
+|user|varchar(255)|Não|
+|label|varchar(255)|Não|
+|query|text|Não|
+== Despejando dados para a tabela pma__bookmark
+
+== Estrutura para tabela pma__central_columns
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**db_name**//|varchar(64)|Não|
+|//**col_name**//|varchar(64)|Não|
+|col_type|varchar(64)|Não|
+|col_length|text|Sim|NULL
+|col_collation|varchar(64)|Não|
+|col_isNull|tinyint(1)|Não|
+|col_extra|varchar(255)|Sim|
+|col_default|text|Sim|NULL
+== Despejando dados para a tabela pma__central_columns
+
+== Estrutura para tabela pma__column_info
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**id**//|int(5)|Não|
+|**db_name**|varchar(64)|Não|
+|**table_name**|varchar(64)|Não|
+|**column_name**|varchar(64)|Não|
+|comment|varchar(255)|Não|
+|mimetype|varchar(255)|Não|
+|transformation|varchar(255)|Não|
+|transformation_options|varchar(255)|Não|
+|input_transformation|varchar(255)|Não|
+|input_transformation_options|varchar(255)|Não|
+== Despejando dados para a tabela pma__column_info
+
+== Estrutura para tabela pma__designer_settings
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**username**//|varchar(64)|Não|
+|settings_data|text|Não|
+== Despejando dados para a tabela pma__designer_settings
+
+== Estrutura para tabela pma__export_templates
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**id**//|int(5)|Não|
+|**username**|varchar(64)|Não|
+|**export_type**|varchar(10)|Não|
+|**template_name**|varchar(64)|Não|
+|template_data|text|Não|
+== Despejando dados para a tabela pma__export_templates
+
+== Estrutura para tabela pma__favorite
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**username**//|varchar(64)|Não|
+|tables|text|Não|
+== Despejando dados para a tabela pma__favorite
+
+== Estrutura para tabela pma__history
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**id**//|bigint(20)|Não|
+|username|varchar(64)|Não|
+|db|varchar(64)|Não|
+|table|varchar(64)|Não|
+|timevalue|timestamp|Não|current_timestamp()
+|sqlquery|text|Não|
+== Despejando dados para a tabela pma__history
+
+== Estrutura para tabela pma__navigationhiding
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**username**//|varchar(64)|Não|
+|//**item_name**//|varchar(64)|Não|
+|//**item_type**//|varchar(64)|Não|
+|//**db_name**//|varchar(64)|Não|
+|//**table_name**//|varchar(64)|Não|
+== Despejando dados para a tabela pma__navigationhiding
+
+== Estrutura para tabela pma__pdf_pages
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|db_name|varchar(64)|Não|
+|//**page_nr**//|int(10)|Não|
+|page_descr|varchar(50)|Não|
+== Despejando dados para a tabela pma__pdf_pages
+
+== Estrutura para tabela pma__recent
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**username**//|varchar(64)|Não|
+|tables|text|Não|
+== Despejando dados para a tabela pma__recent
+
+|root|[{&quot;db&quot;:&quot;crud_db&quot;,&quot;table&quot;:&quot;usuarios&quot;},{&quot;db&quot;:&quot;cadastro&quot;,&quot;table&quot;:&quot;usuarios&quot;},{&quot;db&quot;:&quot;crud&quot;,&quot;table&quot;:&quot;usuarios&quot;}]
+== Estrutura para tabela pma__relation
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**master_db**//|varchar(64)|Não|
+|//**master_table**//|varchar(64)|Não|
+|//**master_field**//|varchar(64)|Não|
+|foreign_db|varchar(64)|Não|
+|foreign_table|varchar(64)|Não|
+|foreign_field|varchar(64)|Não|
+== Despejando dados para a tabela pma__relation
+
+== Estrutura para tabela pma__savedsearches
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**id**//|int(5)|Não|
+|**username**|varchar(64)|Não|
+|**db_name**|varchar(64)|Não|
+|**search_name**|varchar(64)|Não|
+|search_data|text|Não|
+== Despejando dados para a tabela pma__savedsearches
+
+== Estrutura para tabela pma__table_coords
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**db_name**//|varchar(64)|Não|
+|//**table_name**//|varchar(64)|Não|
+|//**pdf_page_number**//|int(11)|Não|0
+|x|float|Não|0
+|y|float|Não|0
+== Despejando dados para a tabela pma__table_coords
+
+== Estrutura para tabela pma__table_info
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**db_name**//|varchar(64)|Não|
+|//**table_name**//|varchar(64)|Não|
+|display_field|varchar(64)|Não|
+== Despejando dados para a tabela pma__table_info
+
+== Estrutura para tabela pma__table_uiprefs
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**username**//|varchar(64)|Não|
+|//**db_name**//|varchar(64)|Não|
+|//**table_name**//|varchar(64)|Não|
+|prefs|text|Não|
+|last_update|timestamp|Não|current_timestamp()
+== Despejando dados para a tabela pma__table_uiprefs
+
+== Estrutura para tabela pma__tracking
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**db_name**//|varchar(64)|Não|
+|//**table_name**//|varchar(64)|Não|
+|//**version**//|int(10)|Não|
+|date_created|datetime|Não|
+|date_updated|datetime|Não|
+|schema_snapshot|text|Não|
+|schema_sql|text|Sim|NULL
+|data_sql|longtext|Sim|NULL
+|tracking|set(&#039;UPDATE&#039;, &#039;REPLACE&#039;, &#039;INSERT&#039;, &#039;DELETE&#039;, &#039;TRUNCATE&#039;, &#039;CREATE DATABASE&#039;, &#039;ALTER DATABASE&#039;, &#039;DROP DATABASE&#039;, &#039;CREATE TABLE&#039;, &#039;ALTER TABLE&#039;, &#039;RENAME TABLE&#039;, &#039;DROP TABLE&#039;, &#039;CREATE INDEX&#039;, &#039;DROP INDEX&#039;, &#039;CREATE VIEW&#039;, &#039;ALTER VIEW&#039;, &#039;DROP VIEW&#039;)|Sim|NULL
+|tracking_active|int(1)|Não|1
+== Despejando dados para a tabela pma__tracking
+
+== Estrutura para tabela pma__userconfig
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**username**//|varchar(64)|Não|
+|timevalue|timestamp|Não|current_timestamp()
+|config_data|text|Não|
+== Despejando dados para a tabela pma__userconfig
+
+|root|2024-02-15 17:07:39|{&quot;Console\/Mode&quot;:&quot;show&quot;,&quot;lang&quot;:&quot;pt_BR&quot;,&quot;Console\/Height&quot;:91.98639999999999}
+== Estrutura para tabela pma__usergroups
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**usergroup**//|varchar(64)|Não|
+|//**tab**//|varchar(64)|Não|
+|//**allowed**//|enum(&#039;Y&#039;, &#039;N&#039;)|Não|N
+== Despejando dados para a tabela pma__usergroups
+
+== Estrutura para tabela pma__users
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**username**//|varchar(64)|Não|
+|//**usergroup**//|varchar(64)|Não|
+== Despejando dados para a tabela pma__users
+
+===Banco de dados sistema_arquivos
+
+===Banco de dados usuarios
+
+== Estrutura para tabela users
+
+|------
+|Coluna|Tipo|Nulo|Padrão
+|------
+|//**id**//|int(11)|Não|
+|username|text|Não|
+|password|text|Não|
+== Despejando dados para a tabela users
+
+|1|root|$2y$10$6g3tno1.NZfRrbTbYKk04OtR7AogJcFqqZySOuWjq4PYyAI1oc70a
+|2|vitor|$2y$10$QMgRfX4cOeOGAUh3obwKDOfaJ5plFp7AXS0Cc7abO4urtRdCAh.Ua
+|3|ricardo|$2y$10$p5T/NRaqgmybcXyADDgyEeLPUDP7POuOrt4mstIiU94WzebMG1uSy
